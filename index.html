@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090d0b">
+  <meta name="description" content="هادکس؛ دستیار هوشمند شما با خرید یک‌باره و مجوز مادام‌العمر.">
+  <title>Hadex | دستیار هوشمند شما</title>
+  <style>
+    :root{color-scheme:dark;--bg:#090d0b;--panel:#111916;--panel2:#151f1b;--text:#f4f7f4;--muted:#a7b3ac;--lime:#c6f36b;--line:rgba(255,255,255,.1)}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(ellipse at 85% 0%,rgba(174,226,91,.12),transparent 36%),var(--bg);color:var(--text);font-family:Tahoma,"Segoe UI",sans-serif;line-height:1.9}
+    a{color:inherit;text-decoration:none}
+    .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}
+    .brand{font-size:27px;font-weight:900;letter-spacing:1px}.brand span{color:var(--lime)}
+    nav{display:flex;gap:28px;color:var(--muted);font-size:14px}
+    nav a:hover{color:var(--lime)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:12px;background:var(--lime);color:#11170c;font-weight:800;border:0;cursor:pointer}
+    .btn.secondary{background:transparent;color:var(--text);border:1px solid var(--line)}
+    .hero{padding:100px 0 82px;display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:center}
+    .eyebrow{display:inline-flex;border:1px solid rgba(198,243,107,.35);color:var(--lime);padding:5px 13px;border-radius:99px;font-size:13px}
+    h1{font-size:clamp(42px,6vw,68px);line-height:1.35;margin:20px 0 16px;letter-spacing:-2px}
+    h1 span{color:var(--lime)}
+    .lead{font-size:18px;color:var(--muted);max-width:620px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+    .visual{min-height:340px;border:1px solid var(--line);border-radius:28px;background:linear-gradient(145deg,#1c2921,#0d1310);display:grid;place-items:center;position:relative;overflow:hidden}
+    .orb{width:190px;height:190px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#efffc9,#c6f36b 35%,#668b2e 72%,#293d18);box-shadow:0 0 90px rgba(198,243,107,.22);display:grid;place-items:center;color:#17210d;font-size:55px;font-weight:900}
+    .visual:after{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.06);border-radius:20px;pointer-events:none}
+    section{padding:70px 0}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+    h2{font-size:34px;margin:0 0 10px}.section-head p,.muted{color:var(--muted)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:25px}
+    .symbol{width:44px;height:44px;border-radius:13px;background:rgba(198,243,107,.12);color:var(--lime);display:grid;place-items:center;font-size:21px;margin-bottom:15px}
+    .card h3{margin:0 0 8px;font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .pricing{max-width:620px;margin:auto;background:linear-gradient(145deg,#17221b,#101713);border:1px solid rgba(198,243,107,.35);border-radius:24px;padding:34px;text-align:center}
+    .price{font-size:48px;font-weight:900;color:var(--lime);margin:12px 0 0}.price small{font-size:17px;color:var(--muted);font-weight:500}
+    .price-note{color:var(--muted);margin-top:0}
+    .checks{list-style:none;padding:0;margin:24px auto;text-align:right;max-width:390px}.checks li{padding:7px 0;color:#dce5de}.checks li:before{content:"✓";color:var(--lime);font-weight:bold;margin-left:10px}
+    .notice{margin-top:18px;padding:13px 16px;border-radius:12px;background:rgba(255,194,92,.08);border:1px solid rgba(255,194,92,.2);color:#e9c98f;font-size:13px}
+    .faq{max-width:800px;margin:auto}.faq details{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:17px 20px;margin:10px 0}.faq summary{cursor:pointer;font-weight:700}.faq p{color:var(--muted);margin-bottom:0}
+    footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:13px}
+    .foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+    @media(max-width:760px){nav{display:none}.hero{grid-template-columns:1fr;padding:65px 0 45px;gap:30px}.visual{min-height:260px}.grid{grid-template-columns:1fr}.price{font-size:39px}section{padding:52px 0}h2{font-size:28px}}
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="#" aria-label="Hadex">HADE<span>X</span></a>
+    <nav aria-label="منوی اصلی">
+      <a href="#features">امکانات</a><a href="#pricing">خرید و مجوز</a><a href="#faq">سؤالات متداول</a>
+    </nav>
+    <a class="btn secondary" href="#pricing">مشاهده قیمت</a>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div>
+        <span class="eyebrow">دستیار هوشمند شما</span>
+        <h1>با <span>Hadex</span>، هوشمندتر کار کنید.</h1>
+        <p class="lead">هادکس محیطی یکپارچه برای گفتگو، کمک در انجام کارها، مرتب‌سازی و تحلیل اطلاعات و استفاده از ابزارهای هوش مصنوعی است؛ با تجربه‌ای ساده و متمرکز.</p>
+        <div class="actions">
+          <a class="btn" href="#pricing">خرید لایسنس مادام‌العمر</a>
+          <a class="btn secondary" href="#features">آشنایی با امکانات</a>
+        </div>
+      </div>
+      <div class="visual" aria-label="نشان گرافیکی Hadex"><div class="orb">H</div></div>
+    </section>
+
+    <section id="features" class="wrap">
+      <div class="section-head"><h2>یک فضای کاری هوشمند</h2><p>ابزارهای موردنیازتان را در یک تجربه منسجم در اختیار داشته باشید.</p></div>
+      <div class="grid">
+        <article class="card"><div class="symbol">✦</div><h3>گفتگوی هوشمند</h3><p>برای پرسش‌ها، ایده‌پردازی، نگارش و حل مسئله از دستیار هوش مصنوعی کمک بگیرید.</p></article>
+        <article class="card"><div class="symbol">⌘</div><h3>ابزارهای کاربردی</h3><p>برای انجام کارهای روزمره و مدیریت جریان کار، از قابلیت‌های یکپارچه هادکس استفاده کنید.</p></article>
+        <article class="card"><div class="symbol">◈</div><h3>تجربه متمرکز</h3><p>محیطی منظم برای دسترسی به امکانات و ادامه کارها در یک برنامه واحد.</p></article>
+      </div>
+    </section>
+
+    <section id="pricing" class="wrap">
+      <div class="section-head"><h2>یک‌بار خرید، استفاده مادام‌العمر</h2><p>برای مجوز نرم‌افزار هزینه را فقط یک‌بار پرداخت می‌کنید.</p></div>
+      <div class="pricing">
+        <span class="eyebrow">مجوز مادام‌العمر Hadex</span>
+        <div class="price">۳۰۰٬۰۰۰ <small>تومان</small></div>
+        <p class="price-note">پرداخت یک‌باره؛ بدون اشتراک ماهانه نرم‌افزار</p>
+        <ul class="checks">
+          <li>مجوز دائمی نرم‌افزار</li>
+          <li>فعال‌سازی برای یک حساب روی یک دستگاه</li>
+          <li>امکان پیگیری بازیابی فعال‌سازی در نصب مجدد ویندوز</li>
+          <li>بدون پرداخت دوره‌ای بابت خود مجوز</li>
+        </ul>
+        <div class="notice">خرید و پرداخت آنلاین هنوز فعال نشده است. تا زمان راه‌اندازی درگاه و تأیید پرداخت، هیچ پرداختی انجام ندهید.</div>
+      </div>
+      <p class="muted" style="text-align:center;margin:22px auto 0;max-width:700px;font-size:13px">هزینه استفاده از مدل‌ها و سرویس‌های هوش مصنوعی، در صورت نیاز، جدا از قیمت لایسنس است و ممکن است بر اساس سرویس انتخابی و میزان مصرف محاسبه شود.</p>
+    </section>
+
+    <section id="faq" class="wrap">
+      <div class="section-head"><h2>سؤالات متداول</h2><p>پاسخ چند پرسش مهم درباره خرید و استفاده از هادکس</p></div>
+      <div class="faq">
+        <details><summary>آیا هزینه هادکس ماهانه است؟</summary><p>خیر. قیمت اعلام‌شده برای مجوز نرم‌افزار، پرداخت یک‌باره و مادام‌العمر است.</p></details>
+        <details><summary>لایسنس روی چند دستگاه فعال می‌شود؟</summary><p>هر لایسنس برای یک حساب و یک دستگاه در نظر گرفته شده است.</p></details>
+        <details><summary>اگر ویندوز را دوباره نصب کنم چه می‌شود؟</summary><p>بازیابی فعال‌سازی روی همان دستگاه باید از مسیر پشتیبانی و تأیید مالکیت انجام شود؛ جزئیات نهایی این فرایند هنگام فعال‌شدن سامانه لایسنس اعلام خواهد شد.</p></details>
+        <details><summary>آیا هزینه مدل‌های هوش مصنوعی هم داخل قیمت است؟</summary><p>خیر. هزینه احتمالی مصرف مدل‌ها یا سرویس‌های هوش مصنوعی جداگانه است و به سرویس و میزان استفاده بستگی دارد.</p></details>
+        <details><summary>چطور خرید را انجام بدهم؟</summary><p>درگاه پرداخت هنوز فعال نیست. پس از راه‌اندازی پرداخت امن و تأیید تراکنش، امکان خرید از همین صفحه فراهم می‌شود.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer><div class="wrap foot"><span>© Hadex — تمامی حقوق محفوظ است.</span><span>ساخته‌شده برای کار هوشمندتر</span></div></footer>
+</body>
+</html>
